@@ -78,7 +78,7 @@ print(f"(w,b) found by gradient descent: ({w_final:8.4f},{b_final:8.4f})")
 
 fig, (ax1, ax2) = plt.subplots(1,2, constrained_layout = True, figsize = (12,4))
 ax1.plot(j_hist[:100])
-ax2.plot(1000 + np.arange(len(j_hist[1000:])), j_hist[1000:])
+ax2.plot(np.arange(900, 1000), j_hist[900:1000])
 ax1.set_title("Cost vs. iteration(start)") ; ax2.set_title("Cost vs. iteration (end)")
 ax1.set_ylabel('cost') ; ax2.set_ylabel('cost')
 ax1.set_xlabel('iteration step') ; ax2.set_xlabel('iteration step')
